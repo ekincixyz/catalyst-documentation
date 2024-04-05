@@ -1,0 +1,17 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import Default from "@astrojs/starlight/components/PageFrame.astro";
+import Header from "@astrojs/starlight/components/Header.astro";
+import Sidebar from "@astrojs/starlight/components/Sidebar.astro";
+---
+
+<Default {...Astro.props}>
+  <Header slot="header" {...Astro.props} />
+  <Sidebar slot="sidebar" {...Astro.props} />
+  <slot />
+</Default>
+
+<!-- Add the cursors -->
+
+<script is:inline src="https://cursor-party.reednaa.partykit.dev/cursors.js"
+></script>

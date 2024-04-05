@@ -18,6 +18,9 @@ export default defineConfig({
     starlight({
       plugins: [starlightLinksValidator()],
       title: "Catalyst Documentation",
+      components: {
+        PageFrame: "./src/components/PageFrame.astro",
+      },
       editLink: {
         baseUrl: `https://github.com/catalystdao/catalyst-documentation/edit/${process.env["CF_PAGES_BRANCH"]}`,
       },
